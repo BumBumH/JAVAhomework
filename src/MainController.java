@@ -20,10 +20,10 @@ public class MainController implements ActionListener{
     mainFrame.getButtonRock().addActionListener(this);
     mainFrame.getButtonScissors().addActionListener(this);
     mainFrame.getButtonPaper().addActionListener(this);
-    // 잠만 getButtonSelect().addActionListener(this);
+    // 수정대기 getButtonSelect().addActionListener(this);
   }
   
-  //승리 패턴을 문자열 화 해두고 "내가 내 는 것":"상대가 낸 것"
+  //승리 패턴을 문자열 화 해두고 "내가 는 것":"상대가 낸 것"
   private List<String> victoryList;
   {
     this.victoryList = new ArrayList<String>();
@@ -32,10 +32,10 @@ public class MainController implements ActionListener{
     this.victoryList.add(this.CODE_PAPER + ":" + this.CODE_ROCK);
   }
   
-  //눌린 버튼과 작동 버튼의 매칭화 
+  //눌린 버튼과 작동 버튼의 매칭화 ??
   private Map<Object, String> rpsMap; 
   {
-    //오브잭트의 등가로 판단했기 때문에 IdentityHashMap을 사용
+    //오브잭트의 등가로 판단했기 때문에 IdentityHashMap을 사용 (이유 모름)
     this.rpsMap = new IdentityHashMap<Object, String>();
     this.rpsMap.put(this.mainFrame.getButtonRock(),this.CODE_ROCK);
     this.rpsMap.put(this.mainFrame.getButtonScissors(),this.CODE_SCISSORS);

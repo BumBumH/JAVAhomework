@@ -12,7 +12,7 @@ public class MainFrame extends JFrame{
   
 
   //배경이미지 (에러)
-  //private Image background=new ImageIcon(MainController.class.getResource("../image/stage.png")).getImage();
+  // private Image background=new ImageIcon(MainController.class.getResource("./button_Image/stage.png")).getImage();
   //바위버튼
   private JButton buttonRock;
   
